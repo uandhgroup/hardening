@@ -22,7 +22,7 @@ is a script to check the current `systemd` configuration of a local service,
 similar to a very basic version of `systemd-analyze security`.
 
 [source,shell]
-----
+```
 $ bash systemd_scan.sh mongodb
 [I] mongodb
     [I] /lib/systemd/system/mongodb.service used.
@@ -40,7 +40,7 @@ $ bash systemd_scan.sh mongodb
     [P] ProtectSystem=full is set.
     [P] ProtectHome=true is set.
     [I] 6 failures, 7 passed.
-----
+```
 
 `systemd-analyze security` calculates an exposure value based on the following
 configuration options:
